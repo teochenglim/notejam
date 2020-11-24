@@ -1,0 +1,17 @@
+Flask
+Flask-Login
+Flask-Mail
+Flask-SQLAlchemy
+Flask-Testing
+Flask-WTF
+Jinja2
+SQLAlchemy
+Tempita
+WTForms
+Werkzeug
+blinker
+decorator
+ipython
+sqlalchemy-migrate
+email_validator
+flask_prometheus_metrics[flask]
