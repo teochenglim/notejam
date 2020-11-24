@@ -1,3 +1,17 @@
+### Heroku
+
+```shell
+$ heroku login
+$ heroku git:remote -a notejam-app
+$ heroku create notejam-app
+$ git add .
+$ git commit -m "make it better"
+$ git push heroku master
+
+```
+
+### Kubernetes version (WIP)
+
 1. Choose Prometheus client using
 
 https://pypi.org/project/flask-prometheus-metrics/
