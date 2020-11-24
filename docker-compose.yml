@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+  nodejam-1:
+    image: teochenglim/notejam
+    container_name: nodejam-1
+    working_dir: /app
+    ports:
+      - "5001:5000"
+    environment:
+      MODE: "docker"
+      ENVIRONMENT: "development"
+    volumes:
+      - ./:/app:cached
+    command: python runserver.py
+    networks:
+      - backend
+
+  nodejam-2:
+    image: teochenglim/notejam
+    container_name: nodejam-2
+    working_dir: /app
+    ports:
+      - "5002:5000"
+    environment:
+      MODE: "docker"
+      ENVIRONMENT: "development"
+    volumes:
+      - ./:/app:cached
+    command: python runserver.py
+    networks:
+      - backend
+
+networks:
+  backend:
