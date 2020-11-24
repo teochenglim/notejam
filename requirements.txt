@@ -15,3 +15,4 @@ ipython
 sqlalchemy-migrate
 email_validator
 flask_prometheus_metrics[flask]
+gunicorn
